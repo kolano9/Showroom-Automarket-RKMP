@@ -1,0 +1,525 @@
+<!-- ================= INDEX.HTML ================= -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoMarket</title>
+    <link rel="stylesheet" href="styleshowroom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+
+<header>
+    <h1>AutoMarket</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#kategori">Tipe Mobil</a>
+        <a href="#produk">Mobil</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Showroom Mobil Indonesia</h2>
+    <p>Dari LCGC hingga Premium 🚗</p>
+</section>
+
+<!-- KATEGORI -->
+<section id="kategori" class="kategori">
+    <h2>Tipe Mobil</h2>
+    <div class="text-center my-4">
+    <button class="btn btn-primary" onclick="filterMobil('all')">Semua</button>
+    <button class="btn btn-success" onclick="filterMobil('suv')">SUV</button>
+    <button class="btn btn-warning" onclick="filterMobil('mpv')">MPV</button>
+    <button class="btn btn-danger" onclick="filterMobil('sedan')">Sedan</button>
+    <button class="btn btn-info" onclick="filterMobil('offroad')">Offroad</button>
+    <button class="btn btn-secondary" onclick="filterMobil('LCGC')">LCGC</button>
+    <button class="btn btn-dark" onclick="filterMobil('COVERTIBLE/SPORT')">Convertible/Sport</button>
+</div>
+
+<!-- PRODUK (±30 MOBIL) -->
+<section id="produk" class="produk">
+
+<!-- 1-10 -->
+<div class="card" style="color: rgb(232, 39, 39);">
+    <img src="images.avanza.jpg">
+    <h3>Toyota Avanza</h3><p>MPV</p>
+    <span>Rp250jt</span>
+    <ul><li>2022</li>
+    <li>1500cc Bensin</li>
+    <li>MT/CVT</li>
+    <li>FWD</li>
+    <li>ABS Airbag</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Avanza')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(232, 39, 39);"><img src="images.veloz.jpg">
+    <h3>Toyota Veloz</h3>
+    <p>MPV</p>
+    <span>Rp300jt</span>
+    <ul><li>2023</li>
+        <li>1500cc</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>ESC</li>
+        </ul>
+    <button class="btn btn-primary" onclick="beliMobil('Veloz')">Beli</button>
+    </div>
+
+<div class="card" style="color:rgb(232, 39, 39);">
+    <img src="images.innova-reborn-diesel.jpg">
+    <h3>Innova Reborn V</h3>
+    <p>MPV 7-Seater</p>
+    <span>Rp400jt</span>
+    <ul><li>2400cc Diesel</li>
+        <li>AT</li>
+        <li>RWD</li>
+        <li>Airbag</li>
+        <li>Hill Assist</li>
+        <li>Diff Lock</li>
+        </ul>
+    <button class="btn btn-primary" onclick="beliMobil('Innova Reborn')">Beli</button>   
+    </div>
+
+
+</div><div class="card" style="color: rgb(232, 39, 39);">
+    <img src="images.innova-zenix-V-hybrid.jpg">
+    <h3>Innova Zenix V</h3>
+    <p>Hybrid MPV</p>
+    <span>Rp500jt</span>
+    <ul><li>Hybrid</li>
+       <li>CVT</li>
+       <li>FWD</li>
+       <li>Airbag</li>
+       <li>Toyota Safety Sense</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Innova Zenix')">Beli</button>       
+</div>
+
+<div class="card" style="color: rgb(232, 39, 39);">
+    <img src="images.xpander.jpg">
+    <h3>Mitsubishi Xpander</h3><p>MPV</p>
+    <span>Rp280jt</span>
+    <ul><li>1500cc</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>ESC</li>
+        <li>Hill Assist</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Xpander')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(232, 39, 39);">
+    <img src="images.xpander-crosss.jpg">
+    <h3>Xpander Cross</h3>
+    <p>MPV Crossover</p>
+    <span>Rp310jt</span>
+    <ul><li>1500cc</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>Hill Assist</li>
+        <li>Active Yaw Control</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Xpander Cross')">Beli</button>
+</div>
+
+<div class="card" style="color: aliceblue;">
+    <img src="images.ertiga.jpg">
+    <h3>Suzuki Ertiga</h3>
+    <p>MPV</p>
+    <span>Rp230jt</span>
+    <ul><li>Hybrid</li>
+        <li>AT</li>
+        <li>FWD</li>
+        <li>Airbag</li>
+        <li>Hill Assist</li></ul>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Ertiga')">Beli</button>
+</div>
+
+
+<div class="card" style="color: aliceblue;">
+    <img src="images.XL7.jpg">
+    <h3>Suzuki XL7</h3>
+    <p>SUV</p>
+    <span>Rp300jt</span>
+    <ul><li>1500cc</li>
+        <li>AT</li>
+        <li>FWD</li>
+        <li>ABS</li>
+        <li>Hill Assist</li>
+        <li>Hill Hold Control</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('XL7')">Beli</button>
+</div> 
+
+<div class="card" style="color: aliceblue;">
+    <img src="Brio_Satya_Front.webp">
+    <h3>Honda Brio</h3>
+    <p>LCGC</p>
+    <span>Rp180jt</span>
+    <ul><li>1200cc</li>
+        <li>MT/CVT</li>
+        <li>FWD</li>
+        <li>ABS</li>
+        <li>Airbag</li>
+        <li>Hill Assist</li>
+        <li>Electronic Power Steering</li>
+        <li>Chrome Front Grille</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Brio')">Beli</button>
+</div>
+
+<div class="card" style="color: aliceblue;">
+    <img src="images.mobilio.jpg">
+    <h3>Honda Mobilio</h3>
+    <p>MPV</p>
+    <span>Rp250jt</span>
+    <ul><li>1500cc</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>Airbag</li>
+        <li>Hill Assist</li>
+        <li>ESC</li>
+        <li>Shark Fin Antenna</li>
+        <li>Electric Power Steering</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Mobilio')">Beli</button>
+</div>
+    
+
+<!-- 11-20 -->
+<div class="card" style="color: aliceblue;">
+    <img src="images.HR-V---putih.jpg">
+    <h3>Honda HR-V</h3>
+    <p>SUV</p>
+    <span>Rp400jt</span>
+    <ul><li>1500cc Turbo</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>Honda Sensing</li>
+        <li>Hill Assist</li>
+        <li>ESC</li>
+        <li>Shark Fin Antenna</li>
+        <li>Power Backdoor</li>
+        <li>LED Headlight</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('HR-V')">Beli</button>
+</div>
+
+<div class="card" style="color: aliceblue;">
+    <img src="images.CR-V.jpg">
+    <h3>Honda CR-V</h3>
+    <p>SUV Hybrid</p>
+    <span>Rp700jt</span>
+    <ul><li>Hybrid</li>
+        <li>AT</li>
+        <li>AWD</li>
+        <li>ADAS</li>
+        <li>Hill Assist</li>
+        <li>ESC</li>
+        <li>Shark Fin Antenna</li>
+        <li>Power Backdoor</li>
+        <li>LED Headlight</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('CR-V')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(238, 123, 66);">
+    <img src="Fortuner-GR-Sport-2024.webp">
+    <h3>Toyota Fortuner 2.8 GR-Sport</h3>
+    <p>SUV</p>
+    <span>Rp728jt</span><ul>
+        <li>2.755cc Diesel</li>
+        <li>Toyota Safety Sense</li>
+        <li>4WD (4x4)</li>
+        <li>6 Airbag</li>
+        <li>Hill Assist</li>
+        <li>Diff Lock</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Fortuner')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(238, 123, 66);">
+    <img src="Pajero-Sport-Black-2026.jpg">
+    <h3>Pajero Sport Dakar Ultimate</h3>
+    <p>SUV</p>
+    <span>Rp600jt</span><ul>
+        <li>2400cc Diesel</li>
+        <li>AT</li>
+        <li>4WD (4x4)</li>
+        <li>ASC</li>
+        <li>Hill Assist</li>
+        <li>Diff Lock</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Pajero Sport')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(238, 123, 66);">
+    <img src="img.hilux.4x4.jpg">
+    <h3>Toyota Hilux Double-Cabin</h3>
+    <p>Pickup Offroad</p>
+    <span>Rp500jt</span>
+    <ul><li>2400cc Diesel</li>
+        <li>MT/AT</li>
+        <li>4WD</li>
+        <li>Diff Lock</li>
+        <li>Hill Assist</li>
+        <li>Vehicle Stability Control</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Hilux')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(238, 123, 66);">
+    <img src="img.D-MAX.BLACK.png">
+    <h3>All New Isuzu D-Max</h3>
+    <p>Pickup</p>
+    <span>Rp480jt</span>
+    <ul><li>1900cc Diesel</li>
+        <li>AT</li>
+        <li>4WD</li>
+        <li>ESC</li>
+        <li>Hill Assist</li>
+        <li>Diff Lock</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('D-Max')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(238, 123, 66);">
+    <img src="IMG.FORD-EVEREST.BLACK.png">
+    <h3>Ford Everest Diesel (I4) Turbo</h3>
+    <p>SUV</p>
+    <span>Rp800jt</span>
+    <ul><li>2000cc Diesel</li>
+        <li>405 Nm @ 1750-2500 rpm</li>
+        <li>4WD</li>
+        <li>6-7 Airbags</li>
+        <li>Hill Assist</li>
+        <li>Diff Lock</li></ul> 
+    <button class="btn btn-primary" onclick="beliMobil('Everest')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(238, 123, 66);">
+    <img src="img.Hyundai.Ioniq-5.png">
+    <h3>Hyundai Ioniq 5</h3>
+    <p>EV</p>
+    <span>Rp750jt</span>
+    <ul><li>Electric</li>
+        <li>AT</li>
+        <li>RWD</li>
+        <li>ADAS</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Ioniq 5')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(18, 188, 92);">
+    <img src="img.hyundai-creta.jpg">
+    <h3>Hyundai Creta</h3>
+    <p>SUV</p>
+    <span>Rp300jt</span>
+    <ul><li>1500cc</li>
+        <li>IVT</li>
+        <li>FWD</li>
+        <li>SmartSense</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Creta')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(18, 188, 92);">
+    <img src="img.BYD-SEAL.JPG">
+    <h3>BYD Seal</h3>
+    <p>EV</p>
+    <span>Rp800jt</span>
+    <ul><li>Electric</li>
+        <li>AWD</li>
+        <li>AT</li>
+        <li>Safety</li></ul>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>   
+    <button class="btn btn-primary" onclick="beliMobil('BYD Seal')">Beli</button>
+</div>  
+
+<div class="card" style="color: rgb(18, 188, 92);">
+    <img src="img.corolla-altis.jpg">
+    <h3>Corolla Altis</h3>
+    <p>Sedan Hybrid</p>
+    <span>Rp600jt</span>
+    <ul><li>Hybrid</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>ADAS</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Corolla Altis')">Beli</button> 
+</div>
+
+<div class="card" style="color: rgb(18, 188, 92);">
+    <img src="img.toyota-camry.jpg">
+    <h3>Toyota Camry</h3>
+    <p>Luxury Sedan</p>
+    <span>Rp900jt</span>
+    <ul><li>Hybrid</li>
+        <li>AT</li>
+        <li>FWD</li>
+        <li>Safety</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Camry')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(18, 188, 92);">
+    <img src="img.Honda-accord.jpg">
+    <h3>Honda Accord</h3>
+    <p>Luxury Sedan</p>
+    <span>Rp950jt</span>
+    <ul><li>Hybrid</li>
+        <li>AT</li>
+        <li>FWD</li>
+        <li>ADAS</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Accord')">Beli</button>
+</div>
+
+<div class="card" style="color: rgb(18, 188, 92);">
+    <img src="img.Lexus-RX.jpg">
+    <h3>Lexus RX</h3>
+    <p>Premium SUV</p>
+    <span>Rp1.2M</span>
+    <ul><li>Hybrid</li>
+        <li>AWD</li>
+        <li>AT</li>
+        <li>7 Airbag</li>
+        <li>Hill Assist</li>
+        <li>Lexus Safety System+</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Lexus RX')">Beli</button>
+</div>
+
+<div class="card" style="color: gold;">
+    <img src="img.BMW-320i.jpg">
+    <h3>BMW 320i</h3>
+    <p>Sedan</p>
+    <span>Rp900jt</span>
+    <ul><li>2000cc Turbo</li>
+        <li>AT Automatic</li>
+        <li>RWD</li>
+        <li>TwinPower Turbo 4-silinder</li>
+        <li>Dynamic Stability DSC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('BMW 320i')">Beli</button>
+</div>
+
+<div class="card" style="color: gold;">
+    <img src="img.Mercedes-C-300-AMG.png">
+    <h3>Mercedes C-300 AMG</h3>
+    <p>Premium</p>
+    <span>Rp1.1M</span>
+    <ul><li>Hybrid</li>
+        <li>AT</li>
+        <li>RWD</li>
+        <li>Assist</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Mercedes C')">Beli</button>
+</div>
+
+<div class="card" style="color: gold;">
+    <img src="img.Wuling-almaz.png">
+    <h3>Wuling Almaz RS</h3>
+    <p>SUV</p>
+    <span>Rp350jt</span>
+    <ul><li>1500cc Turbo</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>ADAS</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Wuling Almaz')">Beli</button>
+</div>
+
+<div class="card" style="color: gold;">
+    <img src="img.Chery-Omoda-5.png">
+    <h3>Chery Omoda 5</h3>
+    <p>SUV</p>
+    <span>Rp330jt</span>
+    <ul><li>1500cc Turbo</li>
+        <li>CVT</li>
+        <li>FWD</li>
+        <li>Safety</li>
+        <li>Traffic Jam Assist</li>
+        <li>6 Airbag</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Chery Omoda 5')">Beli</button>
+</div>
+
+<div class="card" style="color: gold;">
+    <img src="img.MG4-EV.jpg">
+    <h3>MG 4 EV</h3>
+    <p>EV</p>
+    <span>Rp450jt</span>
+    <ul><li>Electric</li>
+        <li>RWD</li>
+        <li>AT</li>
+        <li>Safety</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('MG 4 EV')">Beli</button>
+</div>
+
+<div class="card" style="color: gold;">
+    <img src="img.Mini-Cooper.jpg">
+    <h3>Mini Cooper</h3>
+    <p>Convertible</p>
+    <span>Rp900jt</span>
+    <ul><li>1500cc Turbo</li>
+        <li>AT</li>
+        <li>FWD</li>
+        <li>Airbag</li>
+        <li>Hill Assist</li>
+        <li>ESC</li></ul>
+    <button class="btn btn-primary" onclick="beliMobil('Mini Cooper')">Beli</button>
+</div>
+
+</section>
+
+<footer><p>© 2026 AutoMarket</p></footer>
+
+<script>
+function filterMobil(kategori) {
+    let mobil = document.getElementsByClassName('mobil');
+
+    for (let i = 0; i < mobil.length; i++) {
+        if (kategori === 'all') {
+            mobil[i].style.display = 'block';
+        } else {
+            if (mobil[i].classList.contains(kategori)) {
+                mobil[i].style.display = 'block';
+            } else {
+                mobil[i].style.display = 'none';
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><title>Detail Mobil</title>
+<link rel="stylesheet" href="styleshowroom.css ">
+</head>
+<body>
+<header><h1>Detail Mobil</h1></header>
+<section class="detail">
+<img src="images/fortuner.jpg">
+<h2>Toyota Fortuner GR Sport</h2>
+<p>Harga: Rp600.000.000</p>
+<h3>Spesifikasi</h3>
+<ul>
+<li>Tahun: 2023</li>
+<li>Mesin: 2400cc Diesel Turbo</li>
+<li>Tenaga: ±150 HP</li>
+<li>Transmisi: Automatic</li>
+<li>Penggerak: 4WD</li>
+<li>Bahan Bakar: Diesel</li>
+</ul>
+<h3>Exterior</h3>
+<ul><li>Lampu LED</li><li>Velg Alloy 18 inch</li><li>Body sporty</li></ul>
+<h3>Interior</h3>
+<ul><li>Leather seat</li><li>Head unit touchscreen</li><li>AC digital</li></ul>
+<h3>Safety</h3>
+<ul><li>6 Airbags</li><li>ABS + EBD</li><li>Vehicle Stability Control</li></ul>
+</section>
+</body>
+</html>
