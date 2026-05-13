@@ -1,0 +1,98 @@
+body{
+  font-family:Arial;
+  /* background baru: gradient premium */
+  background: linear-gradient(135deg,#0f172a,#1e3a8a,#0ea5e9);
+  color:white;
+  margin:0;
+}
+
+header{
+  background: rgba(0,0,0,0.8);
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  backdrop-filter: blur(10px);
+}
+
+nav a{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+.hero{
+  text-align:center;
+  padding:40px;
+}
+
+.kategori{
+  text-align:center;
+  padding:20px;
+}
+
+.kategori-list{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.kategori-list div{
+  background: linear-gradient(45deg,#38bdf8,#0ea5e9);
+  padding:10px;
+  color:black;
+  border-radius:8px;
+}
+
+.produk{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+}
+
+.card{
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  width:230px;
+  padding:10px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
+.card ul{
+  text-align:left;
+  font-size:12px;
+}
+
+span{
+  color:#38bdf8;
+}
+
+.detail{
+  padding:20px;
+  text-align:center;
+}
+
+.detail img{
+  width:300px;
+  border-radius:10px;
+}
+
+footer{
+  text-align:center;
+  padding:10px;
+  background: rgba(0,0,0,0.8);
+}
