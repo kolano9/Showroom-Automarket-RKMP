@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Mobil</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <div class="card p-4 bg-dark text-white">
+
+        <h1 class="text-center mb-4">
+            Checkout Mobil
+        </h1>
+
+        <form>
+
+            <div class="mb-3">
+                <label>Nama Lengkap</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label>Nomor WhatsApp</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label>Pilih Mobil</label>
+
+                <select class="form-select">
+
+                    <option>Toyota Avanza G (Rp250jt)</option>
+                    <option>Toyota Veloz (Rp337jt)</option>
+                    <option>Innova Reborn V (Rp438jt)</option>
+                    <option>Innova Zenix V (Rp547jt)</option>
+                    <option>Mitsubishi Xpander (Rp280jt)</option>
+                    <option>Xpander Cross (Rp310jt)</option>
+                    <option>Suzuki Ertiga (Rp230jt)</option>
+                    <option>Suzuki XL7 (Rp300jt)</option>
+                    <option>Honda Brio (Rp180jt)</option>
+                    <option>Honda Mobilio (Rp250jt)</option>
+                    <option>Honda HR-V (Rp400jt)</option>
+                    <option>Honda CR-V (Rp700jt)</option>
+                    <option>Toyota Fortuner 2.8 GR-Sport (Rp728jt)</option>
+                    <option>Pajero Sport Dakar Ultimate (Rp600jt)</option>
+                    <option>Toyota Hilux Double-Cabin (Rp500jt)</option>
+                    <option>All New Isuzu D-Max (Rp480jt)</option>
+                    <option>Ford Everest Diesel (I4) Turbo (Rp800jt)</option>
+                    <option>Hyundai Ioniq 5 (Rp750jt)</option>
+                    <option>Hyundai Creta (Rp300jt)</option>
+                    <option>BYD Seal (Rp800jt)</option>
+                    <option>Corolla Altis (Rp600jt)</option>
+                    <option>Toyota Camry (Rp900jt)</option>
+                    <option>Honda Accord (Rp950jt)</option>
+                    <option>Lexus RX (Rp1.2M)</option>
+                    <option>BMW 320i (Rp900jt)</option>
+                    <option>Mercedes C-300 AMG (Rp1.1M)</option>
+                    <option>Wuling Almaz RS (Rp350jt)</option>
+                    <option>Chery Omoda 5 (Rp330jt)</option>
+                    <option>MG 4 EV (Rp450jt)</option>
+                    <option>Mini Cooper (Rp900jt)</option>
+                
+                
+            
+            </select>
+            </div>
+
+            <div class="mb-3">
+                <label>Metode Pembayaran</label>
+
+                <select class="form-select">
+                    <option>Tunai/Cash</option>
+                    <option>Kredit/Debit, Visa</option>
+                    <option>Transfer Bank (BCA, BRI, BNI, MANDIRI)</option>
+                </select>
+            </div>
+
+            <button
+            type="button"   
+             class="btn btn-success w-100"
+
+            data-bs-toggle="modal"
+            data-bs-target="#checkoutBerhasil">
+
+             Checkout Sekarang
+
+              </button>
+
+        </form>
+
+    </div>
+
+<!-- CONTACT -->
+<div class="contact-section text-center mt-4 mb-5">
+    <h3>Contact Showroom</h3>
+
+    <p>📞 0812-3456-7890</p>
+    <p>📍 Sabilillah Ikan kakap, Indonesia</p>
+
+    <a href="https://wa.me/6281234567890"
+       class="btn btn-success">
+
+       WhatsApp Admin
+
+    </a>
+
+</div>
+
+
+<!-- MODAL CHECKOUT -->
+<div class="modal fade"
+     id="checkoutBerhasil"
+     tabindex="-1">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content bg-dark text-white">
+
+      <!-- HEADER -->
+      <div class="modal-header">
+
+        <h5 class="modal-title">
+          ✅ Checkout Berhasil
+        </h5>
+
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal">
+        </button>
+
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+
+        Terima kasih sudah melakukan checkout 🚗🔥
+
+        <br><br>
+
+        Info lebih lanjut hubungi
+        WhatsApp Customer Service.
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer">
+
+        <a href="https://wa.me/6281234567890"
+           class="btn btn-success">
+
+           WhatsApp Admin
+
+        </a>
+
+        <button type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+
+          Tutup
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
